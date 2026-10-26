@@ -1,7 +1,7 @@
 package com.example.lab_8
 
 class Wizard(val name: String, var mana: Int, var spellPower: Int) {
-    fun castSpell(spell: String): Int {
+    fun castSpell(spell: String): Int { // this function allows the wizard to cast a spell
         when (spell) {
             "Explosion" -> {
                 if (mana >= 10) {
