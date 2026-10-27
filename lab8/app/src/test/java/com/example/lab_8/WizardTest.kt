@@ -56,6 +56,6 @@ class WizardTest {
     fun train_insufficient_mana() {
         evilWizard.mana = 4 // need less than 5 mana for spellPower to not increase
         evilWizard.train()
-        assertEquals(11, evilWizard.spellPower)
+        assertEquals(10, evilWizard.spellPower)
     }
 }
